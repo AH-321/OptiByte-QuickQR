@@ -5,7 +5,10 @@ import numpy as np
 import os
 import time
 
-python_interpreter = '.venv\\Scripts\\python.exe'
+if os.name == 'nt':
+    python_interpreter = '.venv\\Scripts\\python.exe'
+else:
+    python_interpreter = '.venv/bin/python'
 
 def decode_qr_code():
     print("Press 'q' to quit.")

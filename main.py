@@ -14,7 +14,7 @@ def main():
     print("\n\033[1m" + "OptiByte QuickQR" + "\033[0m")
     print("Please make selection:\n")
 
-    print("1. run encode.py")
+    print("1. Run encode.py")
     print("2. Run decode.py")
     print("3. Exit")
 

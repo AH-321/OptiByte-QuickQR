@@ -1,7 +1,10 @@
 import os
 import qrcode
 
-python_interpreter = '.venv\\Scripts\\python.exe'
+if os.name == 'nt':
+    python_interpreter = '.venv\\Scripts\\python.exe'
+else:
+    python_interpreter = '.venv/bin/python'
 
 def generate_qr_code(data, file_name):
     qr = qrcode.QRCode(

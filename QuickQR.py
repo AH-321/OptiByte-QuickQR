@@ -21,10 +21,10 @@ def main():
     choise = input()
 
     if choise == "1":
-        os.system('cls')
+        clear()
         os.system(f'{python_interpreter} scripts/encode.py')
     elif choise == "2":
-        os.system('cls')
+        clear()
         os.system(f'{python_interpreter} scripts/decode.py')
     elif choise == "3":
         exit

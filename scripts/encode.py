@@ -29,6 +29,6 @@ def new_entry():
     generate_qr_code(encode_data, code_file)
     print(f"QR code generated and saved as {code_file}")
 
-    os.system(f'{python_interpreter} main.py')
+    os.system(f'{python_interpreter} QuickQR.py')
 
 new_entry()

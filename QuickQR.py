@@ -19,8 +19,8 @@ def main():
 
     print("1. New ticket")
     print("2. Scan ticket")
-    print("3. Exit")
-
+    print("3. Exit")                    
+    
     choise = input()
 
     if choise == "1":

@@ -22,7 +22,7 @@ def generate_qr_code(data, file_name):
 def new_entry():
     print("#####NEW ENTRY#####")
     encode_data = input("Enter name:")
-    directory = "saved_codes"
+    directory = "saved"
     if not os.path.exists(directory):
         os.makedirs(directory)
     code_file = os.path.join(directory, encode_data + ".png")

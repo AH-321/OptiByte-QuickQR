@@ -17,7 +17,7 @@ def decode_qr_code():
 
     # Load data from JSON file
     try:
-        with open("saved_codes/scanned_data.json", "r") as file:
+        with open("saved/data.json", "r") as file:
             scanned_data = json.load(file)
     except FileNotFoundError:
         print("ERROR: JSON file not found")
@@ -69,7 +69,7 @@ def decode_qr_code():
     cap.release()
     cv2.destroyAllWindows()
     # Save the updated data to JSON file
-    with open("saved_codes/scanned_data.json", "w") as file:
+    with open("saved/data.json", "w") as file:
         json.dump(scanned_data, file)
 
     os.system(f'{python_interpreter} main.py')

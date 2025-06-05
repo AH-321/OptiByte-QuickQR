@@ -15,7 +15,7 @@ def init():
 
 def decode_qr_code(python_interpreter):
     print("Press 'q' to quit.")
-    cap = cv2.VideoCapture(0)
+    cap = cv2.VideoCapture(0) # EDIT THIS VALUE TO SELECT CAMERA
     scanned_data = []
 
     # Load data from JSON file

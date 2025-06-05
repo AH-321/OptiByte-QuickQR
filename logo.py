@@ -16,7 +16,7 @@ def displayLogo():
                              !P&@@@&#B#&@@@BY~     .&@@&B@@@&###&@@@&P~
                                :!J5GBBBPY?~.       .Y55J.^?5PBBBG5J!:
                                                                                                        
-	   By @AH-321
+	   By @AH-321, with (limited) help from @AlmartDev
 	                                                                                            """)
 
 displayLogo()

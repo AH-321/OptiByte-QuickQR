@@ -5,12 +5,15 @@ import numpy as np
 import os
 import time
 
-if os.name == 'nt':
+def init():
+    if os.name == 'nt':
     python_interpreter = '.venv\\Scripts\\python.exe'
-else:
-    python_interpreter = '.venv/bin/python'
+    else:
+        python_interpreter = '.venv/bin/python'
 
-def decode_qr_code():
+    decode_qr_code(python_interpreter)
+
+def decode_qr_code(python_interpreter):
     print("Press 'q' to quit.")
     cap = cv2.VideoCapture(0)
     scanned_data = []
@@ -74,4 +77,4 @@ def decode_qr_code():
 
     os.system(f'{python_interpreter} main.py')
 
-decode_qr_code()
+init() #bruv

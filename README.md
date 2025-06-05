@@ -12,4 +12,4 @@ Unix-like systems:
   6. Run ```python QuickQR.py```
 
 # Please note:
-This program does not currently auto detect cameras. You will need to configure them manually in ```decode.py```. The default is ```0```, which is usually the built-in camera. If using an external camera (webcam, DroidCam, etc.) you will need to select the corresponding number for that camera: ```1```, ```2```, etc.
+This program does not currently auto detect cameras. You will need to configure them manually in line 18 of ```/scripts/decode.py```. The default is ```0```, which is usually the built-in camera. If using an external camera (webcam, DroidCam, etc.) you will need to select the corresponding number for that camera: ```1```, ```2```, etc.
